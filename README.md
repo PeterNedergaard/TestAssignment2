@@ -63,3 +63,20 @@ Can be used to nest tests within eachother. Useful if related tests needs to be 
 **assumeFalse, assumeTrue**\
 Can be used to abandon a test, without marking it as failed, if a certain condition is not met at the start of the test
 
+
+### 3.2 Mocking Frameworks
+
+**Investigate mocking frameworks for your preferred language. Choose at least two frameworks, and answer the questions:**
+#### **Mockito** and **JMockit**
+
+**What are their similarities?**\
+- They have the same purpose. Used to create mock objects in unit tests
+- Both frameworks utilize annotations
+- Both allow for setting expectations on mock objects
+- Both allow for veryfing whether or not certain methods were called on mock objects
+- Both allow to set up mock methods
+
+**What are their differences?**\
+
+
+**Which one would you prefer, if any, and why?**\
