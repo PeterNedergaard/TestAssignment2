@@ -31,6 +31,15 @@ that it is of the highest quality.**
 **Find a story where a software system defect had a bad outcome. Describe what
 happened. Can you identify a test that would have prevented it?**
 
+ **The Therac-25 case:**\
+The Therac-25 was a radiation therapy machine produced in the early 1980s. It was used in the treatment of cancer patients, delivering controlled doses of radiation to target and destroy cells. The machine could operate in two modes: a direct electron beam, and a more powerful X-ray mode.
+
+**The defect:**\
+If an operator entered a particular sequence of keystrokes with a certain timing, the software could mistakenly set up the machine in a high-power mode without the necessary metal target in place.
+
+**Prevention:**\
+To prevent this defect, the developers could have implemented an integration test, which ensures that the high-power mode is only accessible when the necessary metal target is confirmed to be in place.
+
 
 
 ## 3. Investigation of tools
@@ -77,6 +86,11 @@ Can be used to abandon a test, without marking it as failed, if a certain condit
 - Both allow to set up mock methods
 
 **What are their differences?**\
+- Quite different syntax
+- Until version 2, Mockito didnt support mocking of final methods and classes
+- In Mockito, you'd need additional tools to mock constructors and static methods
+- JMockit natively supports mocking only certain methods of an instance. Mockito requires the use of spy()
 
 
 **Which one would you prefer, if any, and why?**\
+I would prefer Mockito. Mockito is more popular in the Java community, which results in more documentation, and better support. Mockito's API is also known to be simpler, which is better suited for newcomers.
