@@ -39,27 +39,27 @@ happened. Can you identify a test that would have prevented it?**
 
 **Investigate JUnit 5 (Jupiter). Explain the following, and how they are useful:**
 
-**@Tag**
+**@Tag**\
 Tags can be put on tests, which can then later be used to filter tests at runtime. You can for example choose to only run tests tagged with "CustomerTests"
 
-**@Disabled**
+**@Disabled**\
 These tests will not be executed
 
-**@RepeatedTest**
+**@RepeatedTest**\
 These tests will be run a specified number of times
 
-**@BeforeEach, @AfterEach**
+**@BeforeEach, @AfterEach**\
 Methods with these annotations will be run either before or after each test
 
-**@BeforeAll, @AfterAll**
+**@BeforeAll, @AfterAll**\
 Methods with these annotations will be run once either before or after all the tests
 
-**@DisplayName**
+**@DisplayName**\
 This annotation is used to provide tests with a more easily readable name. Can make results more descriptive
 
-**@Nested**
+**@Nested**\
 Can be used to nest tests within eachother. Useful if related tests needs to be grouped
 
-**assumeFalse, assumeTrue**
+**assumeFalse, assumeTrue**\
 Can be used to abandon a test, without marking it as failed, if a certain condition is not met at the start of the test
 
